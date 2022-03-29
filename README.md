@@ -1,2 +1,2 @@
 # praktikum-zadaci
-Zadaci iz Javascripta sa praktikuma
+Zadaci iz Javascripta sa Infobip praktikuma

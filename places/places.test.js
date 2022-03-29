@@ -38,26 +38,28 @@ let dalmacija = {
 let Places = [croatia, istria, pula, rovinj, dalmacija, veruda];
 describe("Places", () => {
   test("Ako je place = pula vrati veruda", () => {
-    expect(getAllPlacesUnder(3)).toStrictEqual(veruda);
+    expect(getAllPlacesUnder(3)).toStrictEqual([veruda]);
   });
-  test("Ako je place = istria vrati pula,rovinj,veruda", () => {
+
+  test("Ako je place = istria vrati [pula,rovinj,veruda]", () => {
     expect(getAllPlacesUnder(2)).toStrictEqual([pula, rovinj, veruda]);
   });
-  test("Ako je place = veruda vrati prazan ''", () => {
-    expect(getAllPlacesUnder(4)).toStrictEqual("");
+
+  test("Ako je place = veruda vrati []", () => {
+    expect(getAllPlacesUnder(4)).toStrictEqual([]);
   });
-  test("Ako je place = rovinj vrati prazan ''", () => {
-    expect(getAllPlacesUnder(5)).toStrictEqual("");
+  test("Ako je place = rovinj vrati []", () => {
+    expect(getAllPlacesUnder(5)).toStrictEqual([]);
   });
-  test("Ako je place = dalmacija vrati prazan ''", () => {
-    expect(getAllPlacesUnder(6)).toStrictEqual("");
+  test("Ako je place = dalmacija vrati []", () => {
+    expect(getAllPlacesUnder(6)).toStrictEqual([]);
   });
-  test("Ako je place = Croatia vrati istra,pula,rovinj,dalmacija,veruda", () => {
+  test("Ako je place = croatia vrati [istria,pula,rovinj,dalmacija,veruda]", () => {
     expect(getAllPlacesUnder(1)).toStrictEqual([
       istria,
+      dalmacija,
       pula,
       rovinj,
-      dalmacija,
       veruda,
     ]);
   });

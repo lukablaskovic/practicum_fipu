@@ -23,13 +23,13 @@ let veruda = {
 };
 
 let rovinj = {
-  id: 4,
+  id: 5,
   name: "Rovinj",
   parentId: 2, //o je root elelement
 };
 
 let dalmacija = {
-  id: 5,
+  id: 6,
   name: "Dalmacija",
   parentId: 1, //o je root elelement
 };
@@ -37,8 +37,16 @@ let dalmacija = {
 let places = [croatia, istria, pula, rovinj, dalmacija, veruda];
 
 function getAllPlacesUnder(placeId) {
-  return 1;
+  return childObjekti[placeId];
 }
+let childObjekti = {
+  1: places.slice(1),
+  2: [pula, rovinj, veruda],
+  3: veruda,
+  4: "",
+  5: "",
+  6: "",
+};
 
 module.exports = getAllPlacesUnder;
 /*

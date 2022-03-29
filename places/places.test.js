@@ -24,20 +24,41 @@ let veruda = {
 };
 
 let rovinj = {
-  id: 4,
+  id: 5,
   name: "Rovinj",
   parentId: 2, //o je root elelement
 };
 
 let dalmacija = {
-  id: 5,
+  id: 6,
   name: "Dalmacija",
   parentId: 1, //o je root elelement
 };
 
 let Places = [croatia, istria, pula, rovinj, dalmacija, veruda];
 describe("Places", () => {
-  test("Ako je place ID = 2 vrati objekt istria", () => {
-    expect(getAllPlacesUnder(2)).toBe(Places[1]);
+  test("Ako je place = pula vrati veruda", () => {
+    expect(getAllPlacesUnder(3)).toStrictEqual(veruda);
+  });
+  test("Ako je place = istria vrati pula,rovinj,veruda", () => {
+    expect(getAllPlacesUnder(2)).toStrictEqual([pula, rovinj, veruda]);
+  });
+  test("Ako je place = veruda vrati prazan ''", () => {
+    expect(getAllPlacesUnder(4)).toStrictEqual("");
+  });
+  test("Ako je place = rovinj vrati prazan ''", () => {
+    expect(getAllPlacesUnder(5)).toStrictEqual("");
+  });
+  test("Ako je place = dalmacija vrati prazan ''", () => {
+    expect(getAllPlacesUnder(6)).toStrictEqual("");
+  });
+  test("Ako je place = Croatia vrati istra,pula,rovinj,dalmacija,veruda", () => {
+    expect(getAllPlacesUnder(1)).toStrictEqual([
+      istria,
+      pula,
+      rovinj,
+      dalmacija,
+      veruda,
+    ]);
   });
 });

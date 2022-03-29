@@ -35,7 +35,7 @@ let dalmacija = {
 };
 
 let places = [croatia, istria, pula, rovinj, dalmacija, veruda];
-
+//Rjesenje 2
 function getAllPlacesUnder(placeId) {
   let result = places.filter((place) => {
     return place.parentId == placeId;
@@ -45,6 +45,7 @@ function getAllPlacesUnder(placeId) {
   });
   return result;
 }
+//Rjesenje 1
 /*
 function getAllPlacesUnder(placeId) {
   return childObjekti[placeId];
@@ -59,7 +60,7 @@ let childObjekti = {
   6: "",
 };
 */
-module.exports = getAllPlacesUnder;
+//Rjesenje 1
 /*
     if(place id==2) treba vratiti [
         {
@@ -79,3 +80,4 @@ module.exports = getAllPlacesUnder;
         }
     ]
     */
+module.exports = getAllPlacesUnder;

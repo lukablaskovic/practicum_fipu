@@ -21,6 +21,7 @@ function getDates(value) {
   }, "");
   return result;
 }
+
 let newData = groupBy(data, "price");
 for (const [key, value] of Object.entries(newData).sort((a, b) =>
   a[0].localeCompare(b[0])

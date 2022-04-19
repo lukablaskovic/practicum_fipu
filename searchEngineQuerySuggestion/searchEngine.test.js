@@ -1,0 +1,1 @@
+const findSuggestions = require("./searchEngine");

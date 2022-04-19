@@ -1,31 +1,31 @@
 let croatia = {
   id: 1,
   name: "Croatia",
-  parentId: 0, //o je root elelement
+  parentId: 0,
 };
 
 let istria = {
   id: 2,
   name: "Istria",
-  parentId: 1, //o je root elelement
+  parentId: 1,
 };
 
 let pula = {
   id: 3,
   name: "Pula",
-  parentId: 2, //o je root elelement
+  parentId: 2,
 };
 
 let veruda = {
   id: 4,
   name: "Veruda",
-  parentId: 3, //o je root elelement
+  parentId: 3,
 };
 
 let rovinj = {
   id: 5,
   name: "Rovinj",
-  parentId: 2, //o je root elelement
+  parentId: 2,
 };
 
 let dalmacija = {
@@ -66,17 +66,17 @@ let childObjekti = {
         {
             id: 3,
             name: "Pula",
-            parentId: 2 //o je root elelement
+            parentId: 2
         },
         let rovinj = {
             id: 4,
             name: "Rovinj",
-            parentId: 2 //o je root elelement
+            parentId: 2
         },
         {
             id: 4,
             name: "Veruda",
-            parentId: 3 //o je root elelement
+            parentId: 3 
         }
     ]
     */

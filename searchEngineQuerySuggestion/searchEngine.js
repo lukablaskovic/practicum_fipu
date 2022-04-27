@@ -18,7 +18,9 @@ let phrase = [
   "fish",
   ".",
 ];
+
 const stopWords = [".", ",", "!", "?", ";"];
+
 var indexGram = phrase.reduce(function (obj, word, currentIndex) {
   if (!obj["stopwords"]) {
     obj["stopwords"] = [];
@@ -32,6 +34,7 @@ var indexGram = phrase.reduce(function (obj, word, currentIndex) {
   }
   return obj;
 }, {});
+
 console.log(indexGram);
 
 //findSuggestions("I have");

@@ -1,2 +1,2 @@
 # Praktikum - FIPU
-Javascript vježbe sa Infobip praktikuma
+Javascript vježbe s Infobip praktikuma
